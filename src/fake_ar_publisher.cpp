@@ -74,7 +74,7 @@ int main(int argc, char **argv)
 
   node->declare_parameter("x_pos", -0.4);
   node->declare_parameter("y_pos", 0.2);
-  node->declare_parameter("z_pos", 1);
+  node->declare_parameter("z_pos", 0.8);
   node->declare_parameter("camera_frame", "camera_frame");
 
   // init pose
