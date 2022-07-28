@@ -72,9 +72,9 @@ int main(int argc, char **argv)
   ar_pub = node->create_publisher<fake_ar_publisher::msg::ARMarker>("ar_pose_marker", rclcpp::QoS(1));
   visual_pub = node->create_publisher<visualization_msgs::msg::Marker>("ar_pose_visual", rclcpp::QoS(1));
 
-  node->declare_parameter("x_pos", -0.4);
-  node->declare_parameter("y_pos", 0.2);
-  node->declare_parameter("z_pos", 0.8);
+  node->declare_parameter("x_pos", -0.2);
+  node->declare_parameter("y_pos", 0.8);
+  node->declare_parameter("z_pos", 1.4);
   node->declare_parameter("camera_frame", "camera_frame");
 
   // init pose
